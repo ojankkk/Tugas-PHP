@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .city{
+        background-color: bisque;
+        color: blueviolet;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 20px;
+        }
+        .note{
+        font-size: 120%;
+        color: red;
+        }
+        .kota{
+            background-color: aqua;
+            color: blue;
+        }
+
+         </style>
+    </head>
+    <body>
+        <button onclick="myfunction()">hilangkan elemen</button>
+        <!--Class Attribute-->
+        <div class="city">
+            <h2>Bontang</h2>
+            <p>Bontang adalah kota beriman</p>
+        </div>
+
+        <div class="city">
+            <h2>Bontang</h2>
+            <p>Bontang adalah kota beriman</p>
+        </div>
+
+        <div class="city">
+            <h2>Bontang</h2>
+            <p>Bontang adalah kota beriman</p>
+        </div>
+<hr>
+        <h2>My <span class="note">Important</span> Heading</h2>
+        <p>this is some <span class="note">Important</span> text</p>
+<hr>
+        <!--Syntax For class-->
+        <h2 class="kota"> This is my heading</h2>
+        <p>this is paragraph</p>
+        <h2 class="kota"> This is my heading</h2>
+        <p>this is paragraph</p>
+        <h2 class="kota"> This is my heading</h2>
+        <p>this is paragraph</p>
+<hr>
+        <!--Multiple class-->
+        <h2 class="main">This is my heading</h2>
+        <h2 class="main city">this my second heading</h2>
+<hr>
+        <!-- use js in html-->
+        <script>
+            function myfunction(){
+                var x =document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++){
+                x[i].style.display = "none"
+                }
+            }
+        </script>
+        
+
+    </body>
+</html>
